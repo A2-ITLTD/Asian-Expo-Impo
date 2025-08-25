@@ -5,32 +5,18 @@ const ProductList = ({ category, subcategory, selectedBrand }) => {
   const [showAllProducts, setShowAllProducts] = useState(false);
   const navigate = useNavigate();
 
-  // Filter products by selected brand (safe fallback)
+  // Filter products by selected brand
   const filteredProducts = selectedBrand
-    ? (subcategory.products || []).filter(
-        (product) => product.brand === selectedBrand
+    ? (subcategory?.products || []).filter(
+        (product) => product.keyAttributes?.["Brand"] === selectedBrand
       )
-    : subcategory.products || [];
+    : subcategory?.products || [];
 
   // Determine how many products to show initially
   const initialProductsCount = 3;
   const displayedProducts = showAllProducts
     ? filteredProducts
     : filteredProducts.slice(0, initialProductsCount);
-
-  // Function to calculate discount percentage
-  const calculateDiscount = (originalPrice, offerPrice) => {
-    if (!originalPrice || !offerPrice) return 0;
-
-    const cleanOriginal = parseFloat(originalPrice.replace(/[^0-9.]/g, ""));
-    const cleanOffer = parseFloat(offerPrice.replace(/[^0-9.]/g, ""));
-
-    if (isNaN(cleanOriginal) || isNaN(cleanOffer) || cleanOriginal === 0)
-      return 0;
-
-    const discount = ((cleanOriginal - cleanOffer) / cleanOriginal) * 100;
-    return Math.round(discount);
-  };
 
   const handleSeeAllClick = () => {
     setShowAllProducts(true);
@@ -55,40 +41,37 @@ const ProductList = ({ category, subcategory, selectedBrand }) => {
                       className="object-contain h-full w-full p-2"
                     />
                   ) : (
-                    <div className="text-gray-400">No image available</div>
+                    <div className="text-gray-400 text-sm">
+                      No image available
+                    </div>
                   )}
                 </div>
 
                 {/* Product Name */}
-                <h3 className="font-semibold text-gray-800 mb-2 line-clamp-2 h-14">
-                  {product.name}
+                <h3 className="font-semibold text-gray-800 mb-1 line-clamp-2 h-14">
+                  {product.name || "Unnamed Product"}
                 </h3>
 
-                {/* Brand */}
-                {product.brand && (
-                  <p className="text-sm text-gray-600 mb-2">
-                    Brand: {product.brand}
-                  </p>
-                )}
-
-                {/* Size */}
-                {product.size && (
-                  <p className="text-sm text-gray-600 mb-2">
-                    Size: {product.size}
-                  </p>
-                )}
-
-                {/* Pattern */}
-                {product.pattern && (
-                  <p className="text-sm text-gray-600 mb-2">
-                    Pattern: {product.pattern}
-                  </p>
-                )}
+                {/* Only show brand and size for cart view */}
+                <div className="mb-3 space-y-1">
+                  {product.keyAttributes?.["Brand"] && (
+                    <p className="text-sm text-gray-600">
+                      <span className="font-medium">Brand:</span>{" "}
+                      {product.keyAttributes["Brand"]}
+                    </p>
+                  )}
+                  {product.keyAttributes?.Size && (
+                    <p className="text-sm text-gray-600">
+                      <span className="font-medium">Size:</span>{" "}
+                      {product.keyAttributes.Size}
+                    </p>
+                  )}
+                </div>
 
                 {/* Pricing Information */}
                 <div className="mt-auto">
-                  {product.offerPrice ? (
-                    <div className="flex items-center gap-2 mb-2">
+                  {product.offerPrice && product.price ? (
+                    <div className="flex items-center gap-2 mb-3">
                       <span className="text-lg font-bold text-teal-600">
                         {product.offerPrice}
                       </span>
@@ -96,39 +79,37 @@ const ProductList = ({ category, subcategory, selectedBrand }) => {
                         {product.price}
                       </span>
                       <span className="text-xs bg-red-100 text-red-800 px-2 py-1 rounded-full">
-                        {calculateDiscount(product.price, product.offerPrice)}%
-                        OFF
+                        {Math.round(
+                          ((parseFloat(product.price.replace(/[^0-9.]/g, "")) -
+                            parseFloat(
+                              product.offerPrice.replace(/[^0-9.]/g, "")
+                            )) /
+                            parseFloat(product.price.replace(/[^0-9.]/g, ""))) *
+                            100
+                        )}
+                        % OFF
                       </span>
                     </div>
-                  ) : (
-                    <p className="text-lg font-bold text-teal-600 mb-2">
+                  ) : product.price ? (
+                    <p className="text-lg font-bold text-teal-600 mb-3">
                       {product.price}
                     </p>
-                  )}
+                  ) : null}
 
-                  {/* ✅ See Details Button */}
-                  <button
-                    onClick={() =>
-                      navigate(`/product/${product.id}`, { state: { product } })
-                    }
-                    className="w-full bg-teal-500 hover:bg-teal-600 text-white py-2 rounded-md text-sm font-medium transition-colors flex items-center justify-center gap-1"
-                  >
-                    <span>See Details</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+                  {/* Action Buttons */}
+                  <div className="flex gap-2">
+                    {/* See Details Button */}
+                    <button
+                      onClick={() =>
+                        navigate(`/product/${product.id}`, {
+                          state: { product },
+                        })
+                      }
+                      className="flex-1 bg-teal-500 hover:bg-teal-600 text-white py-2 rounded-md text-sm font-medium transition-colors"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </button>
+                      See Details
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}

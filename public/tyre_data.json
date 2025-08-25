@@ -1090,9 +1090,7 @@
         "brand": "Double Coin",
         "description": "Narrower steer tire for lightweight trucks."
       },
-
-
-         {
+      {
         "productCode": "DC-ST-120R15",
         "model": "FT105",
         "size": "120.00R15TR",
@@ -1593,8 +1591,6 @@
         "brand": "Double Coin",
         "description": "Wide steer tire for medium-duty applications."
       },
-
-
       {
         "productCode": "DC-ST-28575R245",
         "model": "RR202",
@@ -2217,6 +2213,9 @@
         "brand": "Double Coin",
         "description": "Light-duty trailer tire for urban delivery."
       },
+
+
+
       {
         "productCode": "DC-TR-22570R195",
         "model": "FT105",
