@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import ProductCategory from "./ProductCategory";
 import ProductSubcategory from "./ProductSubcategory";
 import ProductList from "./ProductList";
+import SearchSuggestion from "../Search/SearchSuggestion.jsx";
 
 const ProductCatalog = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -12,6 +14,11 @@ const ProductCatalog = () => {
   const [error, setError] = useState(null);
   const [showBrandDropdown, setShowBrandDropdown] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [searchSuggestions, setSearchSuggestions] = useState([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [allProducts, setAllProducts] = useState([]);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchCategories = async () => {
@@ -25,6 +32,18 @@ const ProductCatalog = () => {
 
         const data = await response.json();
         setCategories(data);
+
+        // Flatten all products for search
+        const products = data.flatMap((category) =>
+          (category.subcategories || []).flatMap((subcategory) =>
+            (subcategory.products || []).map((product) => ({
+              ...product,
+              category: category.name,
+              subcategory: subcategory.name,
+            }))
+          )
+        );
+        setAllProducts(products);
 
         if (data.length > 0) {
           const defaultCategory = data[0];
@@ -44,6 +63,30 @@ const ProductCatalog = () => {
 
     fetchCategories();
   }, []);
+
+  // Update search suggestions when query changes
+  useEffect(() => {
+    if (searchQuery.trim().length > 1) {
+      const query = searchQuery.toLowerCase();
+      const results = allProducts
+        .filter((product) => {
+          const productText = `
+          ${product.name} 
+          ${product.keyAttributes?.["Brand Name"] || ""} 
+          ${product.keyAttributes?.Size || ""}
+        `.toLowerCase();
+
+          return productText.includes(query);
+        })
+        .slice(0, 5); // Limit to 5 suggestions
+
+      setSearchSuggestions(results);
+      setShowSuggestions(true);
+    } else {
+      setSearchSuggestions([]);
+      setShowSuggestions(false);
+    }
+  }, [searchQuery, allProducts]);
 
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);
@@ -78,8 +121,21 @@ const ProductCatalog = () => {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    // Implement search functionality here
-    console.log("Searching for:", searchQuery);
+    if (searchQuery.trim()) {
+      navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+      setShowSuggestions(false);
+    }
+  };
+
+  const handleSuggestionClick = (suggestion) => {
+    navigate(`/search?q=${encodeURIComponent(suggestion.name)}`);
+    setShowSuggestions(false);
+    setSearchQuery("");
+  };
+
+  const handleSearchBlur = () => {
+    // Hide suggestions after a short delay to allow clicks
+    setTimeout(() => setShowSuggestions(false), 200);
   };
 
   const scrollToProducts = () => {
@@ -96,7 +152,7 @@ const ProductCatalog = () => {
     const brands = [
       ...new Set(
         selectedSubcategory.products
-          .map((product) => product.brand)
+          .map((product) => product.keyAttributes?.["Brand Name"])
           .filter((brand) => brand)
       ),
     ];
@@ -137,18 +193,25 @@ const ProductCatalog = () => {
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="px-4 max-w-7xl mx-auto">
         {/* Search Bar Section */}
-        <div className="mb-12 text-center">
+        <div className="mb-12 text-center relative">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
             What are you looking for?
           </h2>
-          <form onSubmit={handleSearchSubmit} className="max-w-2xl mx-auto">
+          <form
+            onSubmit={handleSearchSubmit}
+            className="max-w-2xl mx-auto relative"
+          >
             <div className="relative flex items-center">
               <input
                 type="text"
                 placeholder="Search products, brands, categories..."
                 value={searchQuery}
                 onChange={handleSearchChange}
-                className="w-full px-6 py-4 pr-12 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent shadow-sm"
+                onBlur={handleSearchBlur}
+                onFocus={() =>
+                  searchQuery.length > 1 && setShowSuggestions(true)
+                }
+                className="w-full px-6 py-4 pr-12 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent shadow-sm text-teal-800"
               />
               <button
                 type="submit"
@@ -170,9 +233,17 @@ const ProductCatalog = () => {
                 </svg>
               </button>
             </div>
+
+            <SearchSuggestion
+              suggestions={searchSuggestions}
+              onSuggestionClick={handleSuggestionClick}
+              searchQuery={searchQuery}
+              isVisible={showSuggestions}
+            />
           </form>
         </div>
 
+        {/* Rest of your ProductCatalog component remains the same */}
         <h1 className="text-3xl font-bold text-teal-800 mb-4 text-center">
           Product Catalog
         </h1>
@@ -214,7 +285,7 @@ const ProductCatalog = () => {
 
         {selectedCategory && (
           <div className="flex flex-col lg:flex-row gap-8">
-            {/* left side of subcategory and products */}
+            {/* Left side - subcategories */}
             <div className="lg:w-1/4 bg-white rounded-lg shadow-md p-6">
               <h2 className="text-xl font-bold text-teal-800 mb-4 flex items-center">
                 <span className="mr-2 text-2xl">{selectedCategory.icon}</span>
@@ -233,7 +304,7 @@ const ProductCatalog = () => {
               </div>
             </div>
 
-            {/* right side of products and brand filter */}
+            {/* Right side - products and brand filter */}
             <div className="lg:w-3/4">
               {selectedSubcategory ? (
                 <div>

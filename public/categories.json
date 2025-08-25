@@ -7,8 +7,7 @@
       {
         "id": 101,
         "name": "Truck Tires",
-        "products": [
-          
+        "products": [        
   {
     "id": 4001,
     "name": "Double Coin FT105 11R22.5 Drive Tire",
@@ -20,7 +19,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$250.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Durable drive tire with G load range. Designed for reliable performance in various driving conditions.",
@@ -70,7 +69,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$260.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Versatile drive tire for mixed terrain. Suitable for both highway and regional applications.",
@@ -120,7 +119,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$320.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)",
+      "Custom sidewall Branding (Min. order: 50 tires)",
       "Special compound formulation (Min. order: 100 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -170,7 +169,7 @@
       { "minQuantity": 4, "maxQuantity": null, "pricePerTire": "$400.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 20 tires)",
+      "Custom sidewall Branding (Min. order: 20 tires)",
       "Special compound formulation (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -269,7 +268,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$220.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Narrower drive tire for lightweight applications. Provides good fuel efficiency for standard hauling.",
@@ -367,7 +366,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$280.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Durable drive tire for regional haul. Designed for reliable performance in various regional applications.",
@@ -513,7 +512,7 @@
     { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$270.00" }
   ],
   "customizationOptions": [
-    "Custom sidewall branding (Min. order: 50 tires)"
+    "Custom sidewall Branding (Min. order: 50 tires)"
   ],
   "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
   "description": "Versatile drive tire for mixed applications. Suitable for various road conditions and hauling needs.",
@@ -563,7 +562,7 @@
     { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$350.00" }
   ],
   "customizationOptions": [
-    "Custom sidewall branding (Min. order: 50 tires)",
+    "Custom sidewall Branding (Min. order: 50 tires)",
     "Special compound formulation (Min. order: 100 tires)"
   ],
   "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -614,7 +613,7 @@
     { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$330.00" }
   ],
   "customizationOptions": [
-    "Custom sidewall branding (Min. order: 50 tires)",
+    "Custom sidewall Branding (Min. order: 50 tires)",
     "Special compound formulation (Min. order: 100 tires)"
   ],
   "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -665,7 +664,7 @@
     { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$340.00" }
   ],
   "customizationOptions": [
-    "Custom sidewall branding (Min. order: 50 tires)",
+    "Custom sidewall Branding (Min. order: 50 tires)",
     "Special compound formulation (Min. order: 100 tires)"
   ],
   "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1004,7 +1003,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$270.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1055,7 +1054,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$260.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1106,7 +1105,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$310.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1157,7 +1156,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$300.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1208,7 +1207,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$320.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1259,7 +1258,7 @@
         { "minQuantity": 12, "maxQuantity": null, "pricePerTire": "$370.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 20 tires)",
+        "Custom sidewall Branding (Min. order: 20 tires)",
         "Special compound formulation (Min. order: 50 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1310,7 +1309,7 @@
         { "minQuantity": 12, "maxQuantity": null, "pricePerTire": "$380.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 20 tires)",
+        "Custom sidewall Branding (Min. order: 20 tires)",
         "Special compound formulation (Min. order: 50 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1361,7 +1360,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$260.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1412,7 +1411,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$330.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1463,7 +1462,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$255.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1514,7 +1513,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$265.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1565,7 +1564,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$310.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1616,7 +1615,7 @@
         { "minQuantity": 12, "maxQuantity": null, "pricePerTire": "$400.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 20 tires)",
+        "Custom sidewall Branding (Min. order: 20 tires)",
         "Special compound formulation (Min. order: 50 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1667,7 +1666,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$235.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1718,7 +1717,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$225.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1769,7 +1768,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$215.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1820,7 +1819,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$285.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1871,7 +1870,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$195.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1922,7 +1921,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$205.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -1973,7 +1972,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$275.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2024,7 +2023,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$355.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2075,7 +2074,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$335.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2126,7 +2125,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$345.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2177,7 +2176,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$185.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2228,7 +2227,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$215.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2279,7 +2278,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$195.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2330,7 +2329,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$225.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2381,7 +2380,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$235.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2432,7 +2431,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$245.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2483,7 +2482,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$275.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2534,7 +2533,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$265.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2585,7 +2584,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$315.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2636,7 +2635,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$325.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2687,7 +2686,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$375.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2738,7 +2737,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$385.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2789,7 +2788,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$240.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2840,7 +2839,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$250.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2891,7 +2890,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$245.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2942,7 +2941,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$315.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -2993,7 +2992,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$385.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3044,7 +3043,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$230.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3095,7 +3094,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$220.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3146,7 +3145,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$210.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3197,7 +3196,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$280.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3248,7 +3247,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$190.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3299,7 +3298,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$200.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3350,7 +3349,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$270.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3401,7 +3400,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$350.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3452,7 +3451,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$330.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3503,7 +3502,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$340.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3554,7 +3553,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$180.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3605,7 +3604,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$210.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3656,7 +3655,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$190.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3707,7 +3706,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$220.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3758,7 +3757,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$230.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3809,7 +3808,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$240.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3860,7 +3859,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$270.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3911,7 +3910,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$260.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -3962,7 +3961,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$310.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -4013,7 +4012,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$305.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -4064,7 +4063,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$320.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -4115,7 +4114,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$370.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -4166,7 +4165,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$380.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -4217,7 +4216,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$190.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)",
+      "Custom sidewall Branding (Min. order: 50 tires)",
       "Special compound formulation (Min. order: 100 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -4268,7 +4267,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$160.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Regional haul tire with fuel savings. Designed for optimal performance in stop-and-go regional applications.",
@@ -4317,7 +4316,7 @@
       { "minQuantity": 4, "maxQuantity": null, "pricePerTire": "$230.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 20 tires)",
+      "Custom sidewall Branding (Min. order: 20 tires)",
       "Special compound formulation (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -4368,7 +4367,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$160.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Regional haul tire for 24.5\" rims. Provides the same fuel-saving benefits for larger wheel applications.",
@@ -4418,7 +4417,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$180.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Versatile drive tire for mixed routes. Excellent for applications that combine highway and regional driving.",
@@ -4468,7 +4467,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$185.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "High-mileage drive tire for long haul. Engineered for maximum removal miles in over-the-road applications.",
@@ -4566,7 +4565,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$145.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Standard drive tire for 10R22.5 size. Provides reliable performance and fuel efficiency for standard applications.",
@@ -4616,7 +4615,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$190.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)",
+      "Custom sidewall Branding (Min. order: 50 tires)",
       "Special compound formulation (Min. order: 100 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -4666,7 +4665,7 @@
       { "minQuantity": 4, "maxQuantity": null, "pricePerTire": "$230.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 20 tires)",
+      "Custom sidewall Branding (Min. order: 20 tires)",
       "Special compound formulation (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -4717,7 +4716,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$160.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Steer tire for 11R22.5 applications. Designed for precise steering response and even wear characteristics.",
@@ -4767,7 +4766,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$160.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Steer tire for 24.5\" wheel positions. Provides reliable performance and stability for larger wheel applications.",
@@ -4817,7 +4816,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$180.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Precision steering tire for stability. Engineered for exceptional handling and control in various road conditions.",
@@ -4867,7 +4866,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$185.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "High-load steer tire for stability. Designed to handle heavy loads while maintaining excellent steering precision.",
@@ -4965,7 +4964,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$145.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Standard steer tire for 10R22.5 size. Provides reliable steering performance and durability for standard applications.",
@@ -5015,7 +5014,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$190.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)",
+      "Custom sidewall Branding (Min. order: 50 tires)",
       "Special compound formulation (Min. order: 100 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -5065,7 +5064,7 @@
       { "minQuantity": 4, "maxQuantity": null, "pricePerTire": "$230.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 20 tires)",
+      "Custom sidewall Branding (Min. order: 20 tires)",
       "Special compound formulation (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -5116,7 +5115,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$160.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Trailer tire for standard 11R22.5 fitment. Provides reliable performance and even wear for trailer axle applications.",
@@ -5166,7 +5165,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$160.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Trailer tire for 24.5\" wheel positions. Designed for durability and reliability in long-distance trailer applications.",
@@ -5216,7 +5215,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$180.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Trailer tire for mixed-service use. Versatile performance for various trailer applications and road conditions.",
@@ -5266,7 +5265,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTure": "$185.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Durable trailer tire for even wear. Engineered for long life and consistent performance across all trailer positions.",
@@ -5364,7 +5363,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$145.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Standard trailer tire for 10R22.5 size. Provides reliable performance and durability for standard trailer applications.",
@@ -5414,7 +5413,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$310.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -5465,7 +5464,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$305.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -5516,7 +5515,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$315.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -5567,7 +5566,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$290.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -5618,7 +5617,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$300.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -5669,7 +5668,7 @@
         { "minQuantity": 12, "maxQuantity": null, "pricePerTire": "$380.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 20 tires)",
+        "Custom sidewall Branding (Min. order: 20 tires)",
         "Special compound formulation (Min. order: 50 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -5720,7 +5719,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$280.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -5771,7 +5770,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$285.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -5822,7 +5821,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$330.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -5873,7 +5872,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$350.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -5924,7 +5923,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$340.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -5975,7 +5974,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$345.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6026,7 +6025,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$345.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6077,7 +6076,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$350.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6128,7 +6127,7 @@
         { "minQuantity": 12, "maxQuantity": null, "pricePerTire": "$400.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 20 tires)",
+        "Custom sidewall Branding (Min. order: 20 tires)",
         "Special compound formulation (Min. order: 50 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6179,7 +6178,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$320.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6230,7 +6229,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$280.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6281,7 +6280,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$275.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6332,7 +6331,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$300.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6383,7 +6382,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$290.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6434,7 +6433,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$295.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6485,7 +6484,7 @@
         { "minQuantity": 12, "maxQuantity": null, "pricePerTire": "$370.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 20 tires)",
+        "Custom sidewall Branding (Min. order: 20 tires)",
         "Special compound formulation (Min. order: 50 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6536,7 +6535,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$260.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6587,7 +6586,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$270.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6638,7 +6637,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$270.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6689,7 +6688,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$280.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6740,7 +6739,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$290.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6791,7 +6790,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$295.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6842,7 +6841,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$300.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6893,7 +6892,7 @@
         { "minQuantity": 12, "maxQuantity": null, "pricePerTire": "$320.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 20 tires)",
+        "Custom sidewall Branding (Min. order: 20 tires)",
         "Special compound formulation (Min. order: 50 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6944,7 +6943,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$260.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -6995,7 +6994,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$255.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7046,7 +7045,7 @@
         { "minQuantity": 12, "maxQuantity": null, "pricePerTire": "$320.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 20 tires)",
+        "Custom sidewall Branding (Min. order: 20 tires)",
         "Special compound formulation (Min. order: 50 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7097,7 +7096,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$310.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7148,7 +7147,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$315.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7199,7 +7198,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$325.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7250,7 +7249,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$330.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7301,7 +7300,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$335.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7352,7 +7351,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$305.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7403,7 +7402,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$300.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7454,7 +7453,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$260.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7505,7 +7504,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$255.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7556,7 +7555,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$265.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7607,7 +7606,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$270.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7658,7 +7657,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$275.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7709,7 +7708,7 @@
         { "minQuantity": 12, "maxQuantity": null, "pricePerTire": "$295.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 20 tires)",
+        "Custom sidewall Branding (Min. order: 20 tires)",
         "Special compound formulation (Min. order: 50 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7760,7 +7759,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$250.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7811,7 +7810,7 @@
         { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$245.00" }
       ],
       "customizationOptions": [
-        "Custom sidewall branding (Min. order: 50 tires)",
+        "Custom sidewall Branding (Min. order: 50 tires)",
         "Special compound formulation (Min. order: 100 tires)"
       ],
       "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7862,7 +7861,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$250.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)",
+      "Custom sidewall Branding (Min. order: 50 tires)",
       "Special compound formulation (Min. order: 100 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -7913,7 +7912,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$230.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Budget all-position drive tire. Offers versatility and value for various applications.",
@@ -7963,7 +7962,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$235.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Value-priced drive tire for long haul. Designed for extended mileage and fuel economy.",
@@ -8013,7 +8012,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$245.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Regional haul drive tire with good value. Balanced performance for frequent stop-and-go applications.",
@@ -8063,7 +8062,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$248.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Economical long-haul drive tire. Engineered for fuel efficiency and mileage on highway applications.",
@@ -8112,7 +8111,7 @@
       { "minQuantity": 4, "maxQuantity": null, "pricePerTire": "$300.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 20 tires)",
+      "Custom sidewall Branding (Min. order: 20 tires)",
       "Special compound formulation (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -8211,7 +8210,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$225.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Economical all-position drive tire. Provides flexibility for drive and trailer axle applications.",
@@ -8261,7 +8260,7 @@
     { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$240.00" }
   ],
   "customizationOptions": [
-    "Custom sidewall branding (Min. order: 50 tires)"
+    "Custom sidewall Branding (Min. order: 50 tires)"
   ],
   "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
   "description": "Budget-friendly steer tire. Provides reliable handling and stability at an affordable price point.",
@@ -8311,7 +8310,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$250.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Value-oriented steer tire for highway use. Designed for precise steering response and even wear.",
@@ -8361,7 +8360,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$230.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Economical all-position steer tire. A versatile and affordable option for various axle positions.",
@@ -8411,7 +8410,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$235.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Budget steer tire for long haul. Delivers dependable performance for extended highway journeys.",
@@ -8461,7 +8460,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$245.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Affordable long-haul steer tire. Built for mileage and stability on extended trips.",
@@ -8510,7 +8509,7 @@
       { "minQuantity": 4, "maxQuantity": null, "pricePerTire": "$290.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 20 tires)",
+      "Custom sidewall Branding (Min. order: 20 tires)",
       "Special compound formulation (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -8609,7 +8608,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$230.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Budget all-position steer tire. Provides dependable performance for both steer and trailer axles.",
@@ -8659,7 +8658,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$220.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Value-oriented trailer tire. Provides reliable and durable performance for trailer applications.",
@@ -8709,7 +8708,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$240.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Budget trailer tire for heavy loads. Designed to handle significant weight with durability.",
@@ -8759,7 +8758,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$225.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Economical all-position trailer tire. A versatile and cost-effective option for trailer use.",
@@ -8809,7 +8808,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$228.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Value trailer tire for long-distance. Engineered for reliability over extended highway travel.",
@@ -8859,7 +8858,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$235.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Regional trailer tire at competitive price. Offers great value for regional hauling applications.",
@@ -8909,7 +8908,7 @@
       { "minQuantity": 20, "maxQuantity": null, "pricePerTire": "$238.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 50 tires)"
+      "Custom sidewall Branding (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
     "description": "Affordable long-haul trailer tire. Built for durability and reliability on long journeys.",
@@ -8958,7 +8957,7 @@
       { "minQuantity": 4, "maxQuantity": null, "pricePerTire": "$280.00" }
     ],
     "customizationOptions": [
-      "Custom sidewall branding (Min. order: 20 tires)",
+      "Custom sidewall Branding (Min. order: 20 tires)",
       "Special compound formulation (Min. order: 50 tires)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
@@ -9303,7 +9302,7 @@
               "Graphic customization (Min. order: 500 pieces)"
             ],
             "shipping": "Shipping fee and delivery date to be negotiated. Chat with supplier for more details.",
-            "description": "Wheelsky black E-coated steel rims for passenger cars, trailers, and light trucks. Durable corrosion-resistant finish with multiple PCD and offset options. Full branding/packaging customization available.",
+            "description": "Wheelsky black E-coated steel rims for passenger cars, trailers, and light trucks. Durable corrosion-resistant finish with multiple PCD and offset options. Full Branding/packaging customization available.",
             "image": "/assets/Vehicle/rim/steel.png",
             "keyAttributes": {
               "Diameter": "11–15 Inch",
@@ -9529,7 +9528,7 @@
               "Graphic customization (Min. order: 25 Tons)"
             ],
             "shipping": "Delivery time 7-15 days. Shipping fee to be negotiated with supplier.",
-            "description": "High-quality aluminum copper scrap block with excellent conductivity and purity. Suitable for recycling, industrial applications, and metal production. Supplied in bulk with customizable packaging and branding.",
+            "description": "High-quality aluminum copper scrap block with excellent conductivity and purity. Suitable for recycling, industrial applications, and metal production. Supplied in bulk with customizable packaging and Branding.",
             "image": "/assets/Metals/Copper/copper2.jpeg",
             "keyAttributes": {
               "Place of Origin": "Guangdong, China",
@@ -9953,7 +9952,7 @@
               "Graphic customization (Min. order: 20,000 kg)"
             ],
             "shipping": "Shipping fee and delivery date to be negotiated. Chat with supplier now for more details.",
-            "description": "High quality roasted cashew nuts, supplied worldwide. Delicious, nutritious, and available at competitive bulk pricing. Ideal for snacks, food processing, and resale with customization options for branding and packaging.",
+            "description": "High quality roasted cashew nuts, supplied worldwide. Delicious, nutritious, and available at competitive bulk pricing. Ideal for snacks, food processing, and resale with customization options for Branding and packaging.",
             "image": "/assets/dryFruit/nuts/cashew_roasted.png",
             "keyAttributes": {
               "Type": "Cashew Nut",
@@ -10301,7 +10300,7 @@
                     "Customized packaging (Min. order: 10,000 kg)"
                   ],
                   "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
-                  "description": "Premium Frozen Roasted Unagi Eel (Conger Pike), wild-caught and processed under HACCP standards. Vacuum-packed or bulk packed in 10kg cartons. Features low-sugar, nutritious, and organic qualities. Shelf life of 2 years when stored under -18°C. Available with OEM branding and packaging customization. Ideal for sushi, grilling, and gourmet cooking.",
+                  "description": "Premium Frozen Roasted Unagi Eel (Conger Pike), wild-caught and processed under HACCP standards. Vacuum-packed or bulk packed in 10kg cartons. Features low-sugar, nutritious, and organic qualities. Shelf life of 2 years when stored under -18°C. Available with OEM Branding and packaging customization. Ideal for sushi, grilling, and gourmet cooking.",
                   "image": "/assets/fish/eel/eel1.png",
                   "keyAttributes": {
                     "Product Code": "NA",
@@ -10494,7 +10493,7 @@
           "modelNumber": "NA"
         },
         "image": "/assets/fish/crab/crab.png",
-        "description": "High-quality frozen mud crab, wild-caught and processed under international standards. Packed in 10kg cartons, stored at -18°C for up to 24 months. Available with customized logo, packaging, and graphic branding for bulk orders. Ideal for wholesale seafood distributors and restaurants."
+        "description": "High-quality frozen mud crab, wild-caught and processed under international standards. Packed in 10kg cartons, stored at -18°C for up to 24 months. Available with customized logo, packaging, and graphic Branding for bulk orders. Ideal for wholesale seafood distributors and restaurants."
       },
       {
         "id": 5003,
@@ -10542,7 +10541,7 @@
           "supplyAbility": "100 Tons"
         },
         "image": "/assets/fish/crab/crab2.png",
-        "description": "Premium frozen sea and mud crabs sourced from Bangladesh. Wild-caught and processed under HACCP standards with IQF/BQF freezing technology. Available in whole cuts, 300–1000g size range, packed in 10kg cartons or 12-box cartons. Shelf life of 24 months at -18°C. Customizable packaging and branding options available for bulk orders. Ideal for seafood distributors, restaurants, and export markets worldwide."
+        "description": "Premium frozen sea and mud crabs sourced from Bangladesh. Wild-caught and processed under HACCP standards with IQF/BQF freezing technology. Available in whole cuts, 300–1000g size range, packed in 10kg cartons or 12-box cartons. Shelf life of 24 months at -18°C. Customizable packaging and Branding options available for bulk orders. Ideal for seafood distributors, restaurants, and export markets worldwide."
       },
       {
         "id": 5005,
@@ -10638,7 +10637,7 @@
                   "Brand": "Custom"
                 },
                 "image": "/assets/fish/shrimp/shrimp.png",
-                "description": "Premium frozen white shrimp (water prawn), processed headless and skinless with IQF freezing. Packed in 10/20 kg cartons and stored at -18°C, with a shelf life of 24 months. Sourced from Bangladesh farms, available with custom branding and packaging. Ideal for curry, grilling, and seafood dishes. Bulk MOQ of 30,000 kg with competitive tiered pricing."
+                "description": "Premium frozen white shrimp (water prawn), processed headless and skinless with IQF freezing. Packed in 10/20 kg cartons and stored at -18°C, with a shelf life of 24 months. Sourced from Bangladesh farms, available with custom Branding and packaging. Ideal for curry, grilling, and seafood dishes. Bulk MOQ of 30,000 kg with competitive tiered pricing."
               },
               {
                 "id": 5005,
@@ -10932,7 +10931,7 @@
       "Customized packaging (Min. order: 10,000 kg)"
     ],
     "shipping": "Shipping fee and delivery date to be negotiated. Contact supplier for details.",
-    "description": "Frozen Pacific mackerel, caught from deep sea and processed under HACCP standards. Packed in 10kg cartons. Shelf life of 2 years at -18°C. OEM branding and packaging customization available. Perfect for grilling, baking, or steaming.",
+    "description": "Frozen Pacific mackerel, caught from deep sea and processed under HACCP standards. Packed in 10kg cartons. Shelf life of 2 years at -18°C. OEM Branding and packaging customization available. Perfect for grilling, baking, or steaming.",
     "image": "/assets/fish/pacific-mackerel/pacific-mackerel.png",
     "keyAttributes": {
       "Product Code": "NA",

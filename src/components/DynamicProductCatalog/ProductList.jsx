@@ -7,10 +7,10 @@ const ProductList = ({ category, subcategory, selectedBrand }) => {
 
   // Filter products by selected brand
   const filteredProducts = selectedBrand
-    ? (subcategory?.products || []).filter(
+    ? (subcategory.products || []).filter(
         (product) => product.keyAttributes?.["Brand"] === selectedBrand
       )
-    : subcategory?.products || [];
+    : subcategory.products || [];
 
   // Determine how many products to show initially
   const initialProductsCount = 3;

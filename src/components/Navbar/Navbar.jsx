@@ -143,23 +143,6 @@ const Navbar = () => {
                         </a>
                       ))}
                     </div>
-                    {productCategories[2].subItems && (
-                      <div className="mt-1 pl-2 border-l border-amber-200">
-                        <div className="space-y-0.5">
-                          {productCategories[2].subItems.map(
-                            (subItem, subIndex) => (
-                              <a
-                                key={subIndex}
-                                href="#"
-                                className="block py-0.5 px-2 hover:bg-amber-50 rounded text-xs text-gray-600 transition-colors"
-                              >
-                                {subItem}
-                              </a>
-                            )
-                          )}
-                        </div>
-                      </div>
-                    )}
                   </div>
 
                   {/* Agriculture */}
@@ -180,7 +163,7 @@ const Navbar = () => {
                     </div>
                   </div>
 
-                  {/* Frozen Fish & Wood Combined */}
+                  {/* Frozen Fish  */}
                   <div className="flex-1">
                     <h3 className="text-sm font-bold text-teal-800 pb-1 mb-2 border-b border-teal-200">
                       Frozen Fish
@@ -196,8 +179,11 @@ const Navbar = () => {
                         </a>
                       ))}
                     </div>
+                  </div>
 
-                    <h3 className="text-sm font-bold text-teal-800 pb-1 mb-2 mt-2 border-b border-teal-200">
+                  {/* Wood */}
+                  <div className="flex-1">
+                    <h3 className="text-sm font-bold text-teal-800 pb-1 mb-2 border-b border-teal-200">
                       Wood
                     </h3>
                     <div className="space-y-0.5">
