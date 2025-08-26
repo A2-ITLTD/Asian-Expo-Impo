@@ -8,6 +8,7 @@ import {
   FaRegStar,
   FaStarHalfAlt,
 } from "react-icons/fa";
+import ContactModal from "../shared/Modal/ContactModal";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -19,6 +20,7 @@ const ProductDetails = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [zoomLevel, setZoomLevel] = useState(1);
   const [showZoomControls, setShowZoomControls] = useState(false);
+  const [showContactModal, setShowContactModal] = useState(false);
 
   useEffect(() => {
     if (!productFromState) {
@@ -49,6 +51,12 @@ const ProductDetails = () => {
     }
   };
 
+  // Function to extract numerical value from price string
+  const getPriceValue = (priceStr) => {
+    if (!priceStr) return 0;
+    return parseFloat(priceStr.replace(/[^\d.]/g, ""));
+  };
+
   const renderStars = (rating = 0) => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {
@@ -74,6 +82,11 @@ const ProductDetails = () => {
     );
   }
 
+  // Check if product is a tyre
+  const isTyre =
+    product.keyAttributes?.["Tire Type"] !== undefined ||
+    product.keyAttributes?.["Pattern"] !== undefined ||
+    product.name?.toLowerCase().includes("tire");
   return (
     <div className="w-full bg-gray-50 px-4 lg:px-0">
       <div className="max-w-7xl mx-auto p-6 text-gray-800 rounded-lg">
@@ -87,7 +100,7 @@ const ProductDetails = () => {
         </button>
 
         <h2 className="text-3xl font-bold mb-12 text-center text-teal-800 hover:text-teal-900 transition-colors duration-300 border-b-2 border-amber-400 pb-2">
-          {product.keyAttributes?.["Brand Name"] || "Product Details"}
+          {product.keyAttributes?.["Brand"] || "Product Details"}
         </h2>
 
         <div className="flex flex-col lg:flex-row gap-8">
@@ -161,9 +174,6 @@ const ProductDetails = () => {
             <h1 className="text-2xl font-bold text-teal-800">{product.name}</h1>
             <p className="text-sm text-gray-600 mb-2">
               {product.keyAttributes?.Size || "N/A"}
-            </p>
-            <p className="text-sm text-gray-600">
-              Pattern: {product.keyAttributes?.Pattern || "N/A"}
             </p>
 
             <div className="grid grid-cols-2 gap-3 text-sm text-gray-700 mt-4">
@@ -245,6 +255,15 @@ const ProductDetails = () => {
                   Description
                 </h3>
                 <p className="text-gray-700 text-sm">{product.description}</p>
+
+                {/* Conditional Shipping Text */}
+                <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                  <p className="text-sm text-blue-800 font-medium">
+                    {isTyre
+                      ? "🚚 No shipping cost inside USA for tyres"
+                      : "📦 Shipping cost will be calculated based on your area"}
+                  </p>
+                </div>
               </div>
             )}
           </div>
@@ -252,17 +271,31 @@ const ProductDetails = () => {
           {/* Right: Purchase Box */}
           <div className="lg:w-1/4 bg-white text-gray-800 p-4 rounded-lg shadow-lg border border-gray-200">
             <div className="mb-4">
-              <p className="text-gray-600 text-sm">Regular Price:</p>
-              <p className="font-bold text-lg line-through text-gray-500">
-                {product.price || "N/A"}
-              </p>
-              {product.offerPrice && (
+              {/* Updated Price Display */}
+              {product.price && product.offerPrice ? (
                 <>
-                  <p className="text-amber-600 text-sm mt-1">Offer Price:</p>
-                  <p className="font-bold text-2xl text-amber-600">
-                    {product.offerPrice}
+                  <p className="text-gray-900 text-lg">Price Range:</p>
+                  <div className="flex items-center gap-2">
+                    <p className="font-bold text-2xl text-amber-600">
+                      {product.offerPrice}
+                    </p>
+
+                    <span className="text-gray-7700">-</span>
+
+                    <p className="font-bold text-2xl line-through text-gray-500">
+                      {product.price}
+                    </p>
+                  </div>
+                </>
+              ) : product.price ? (
+                <>
+                  <p className="text-gray-600 text-sm">Price:</p>
+                  <p className="font-bold text-2xl text-teal-800">
+                    {product.price}
                   </p>
                 </>
+              ) : (
+                <p className="text-gray-500">Price: N/A</p>
               )}
             </div>
 
@@ -286,10 +319,10 @@ const ProductDetails = () => {
               </p>
             )}
 
-            <button className="block w-full bg-teal-600 text-white py-2 rounded hover:bg-teal-700 text-center mb-2">
-              Request Quote
-            </button>
-            <button className="block w-full bg-transparent border border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white py-2 px-6 rounded-lg transition-colors">
+            <button
+              onClick={() => setShowContactModal(true)}
+              className="block w-full bg-teal-600 hover:bg-teal-700 text-white px-6 py-2 rounded-lg transition-colors"
+            >
               Contact Supplier
             </button>
           </div>
@@ -329,7 +362,7 @@ const ProductDetails = () => {
             <div>
               <p className="text-gray-600">Brand Name:</p>
               <p className="text-teal-800 font-medium">
-                {product.keyAttributes?.["Brand Name"] || "N/A"}
+                {product.keyAttributes?.["Brand"] || "N/A"}
               </p>
             </div>
             <div>
@@ -351,7 +384,10 @@ const ProductDetails = () => {
               </p>
             </div>
           </div>
-          <button className="mt-6 bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-lg font-medium">
+          <button
+            onClick={() => setShowContactModal(true)}
+            className="mt-6 bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-lg font-medium"
+          >
             Contact Supplier Directly
           </button>
         </div>
@@ -397,6 +433,17 @@ const ProductDetails = () => {
           </div>
         )}
       </div>
+
+      {/* Contact Modal */}
+      {/* Contact Modal */}
+      {showContactModal && (
+        <ContactModal
+          isOpen={showContactModal}
+          onClose={() => setShowContactModal(false)}
+          tyreModel={product.name} // Pass the product name here
+          moq={product.keyAttributes?.MOQ} // Pass the MOQ here
+        />
+      )}
     </div>
   );
 };

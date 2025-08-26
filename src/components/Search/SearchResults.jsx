@@ -43,7 +43,7 @@ const SearchResults = () => {
         const searchTerms = query.toLowerCase().split(" ");
         const productText = `
           ${product.name} 
-          ${product.keyAttributes?.["Brand Name"] || ""} 
+          ${product.keyAttributes?.["Brand"] || ""} 
           ${product.keyAttributes?.Size || ""} 
           ${product.keyAttributes?.Pattern || ""}
           ${product.description || ""}

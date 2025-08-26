@@ -1,13 +1,31 @@
 import { useState } from "react";
 
-const ContactModal = ({ isOpen, onClose, tyreModel }) => {
+const ContactModal = ({ isOpen, onClose, tyreModel, moq }) => {
+  // Parse MOQ to get the minimum quantity value and unit
+  const parseMOQ = () => {
+    if (!moq) return { minQuantity: 50, unit: "pieces" }; // Default fallback
+
+    // Extract numbers and text from MOQ string (e.g., "50 tires", "3 MT", "35 Tons")
+    const match = moq.match(/(\d+)\s*(.*)/);
+    if (match) {
+      return {
+        minQuantity: parseInt(match[1], 10),
+        unit: match[2].toLowerCase() || "pieces",
+      };
+    }
+
+    return { minQuantity: 50, unit: "pieces" }; // Default fallback
+  };
+
+  const { minQuantity, unit } = parseMOQ();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     company: "",
     address: "",
-    quantity: 50,
+    quantity: minQuantity, // Set initial quantity to the minimum
     message: "",
     model: tyreModel || "",
   });
@@ -19,8 +37,8 @@ const ContactModal = ({ isOpen, onClose, tyreModel }) => {
   };
 
   const handleQuantityChange = (e) => {
-    let value = parseInt(e.target.value, 10) || 50;
-    value = Math.max(50, value);
+    let value = parseInt(e.target.value, 10) || minQuantity;
+    value = Math.max(minQuantity, value); // Use dynamic minQuantity
     setFormData((prev) => ({ ...prev, quantity: value }));
   };
 
@@ -29,14 +47,15 @@ const ContactModal = ({ isOpen, onClose, tyreModel }) => {
     setStatus("sending");
 
     try {
-      const response = await fetch(
-        "https://wheel-tyers-backend-main.vercel.app/api/send-email",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch("http://localhost:3001/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...formData,
+          moq: moq || "50 pieces",
+          type: "product_inquiry",
+        }),
+      });
 
       if (response.ok) {
         setStatus("success");
@@ -46,7 +65,7 @@ const ContactModal = ({ isOpen, onClose, tyreModel }) => {
           phone: "",
           company: "",
           address: "",
-          quantity: 50,
+          quantity: minQuantity, // Reset to dynamic minQuantity
           message: "",
           model: tyreModel || "",
         });
@@ -55,6 +74,8 @@ const ContactModal = ({ isOpen, onClose, tyreModel }) => {
           setStatus("");
         }, 2000);
       } else {
+        const errorData = await response.json().catch(() => ({}));
+        console.error("Backend error:", errorData);
         setStatus("error");
       }
     } catch (error) {
@@ -67,47 +88,41 @@ const ContactModal = ({ isOpen, onClose, tyreModel }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 p-4 bg-black/50">
-      <div className="bg-[#1A1A1A] rounded-lg p-4 max-w-md w-full">
+      <div className="bg-white rounded-lg p-4 max-w-md w-full shadow-xl">
         {" "}
-        {/* Reduced padding */}
+        {/* Changed to white background */}
         <div className="flex justify-between items-center mb-3">
-          {" "}
-          {/* Reduced margin */}
-          <h2 className="text-lg font-bold text-white">Contact Us</h2>{" "}
-          {/* Smaller text */}
+          <h2 className="text-lg font-bold text-teal-800">Contact Supplier</h2>{" "}
+          {/* Changed to teal color */}
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-white text-xl font-bold" /* Smaller close button */
+            className="text-gray-600 hover:text-teal-800 text-xl font-bold transition-colors" /* Teal hover */
           >
             &times;
           </button>
         </div>
         {status === "success" ? (
-          <div className="p-2 bg-green-900 text-green-400 rounded mb-3 text-sm">
+          <div className="p-2 bg-green-100 text-green-700 rounded mb-3 text-sm">
             {" "}
-            {/* Compact success */}
+            {/* Light green success */}
             Message sent successfully!
           </div>
         ) : status === "error" ? (
-          <div className="p-2 bg-red-900 text-red-400 rounded mb-3 text-sm">
+          <div className="p-2 bg-red-100 text-red-700 rounded mb-3 text-sm">
             {" "}
-            {/* Compact error */}
+            {/* Light red error */}
             Failed to send message. Please try again.
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-3">
-            {" "}
-            {/* Reduced spacing */}
             <input
               type="text"
               name="model"
               value={formData.model}
               readOnly
-              className="w-full p-2 text-sm bg-[#333] text-white rounded border border-gray-600 focus:border-orange-500 focus:outline-none cursor-not-allowed opacity-70"
+              className="w-full p-2 text-sm bg-gray-100 text-gray-700 rounded border border-gray-300 focus:border-teal-500 focus:outline-none cursor-not-allowed opacity-70" /* Gray background, teal focus */
             />
             <div className="grid grid-cols-2 gap-3">
-              {" "}
-              {/* Name and Email in one row */}
               <input
                 type="text"
                 name="name"
@@ -115,7 +130,7 @@ const ContactModal = ({ isOpen, onClose, tyreModel }) => {
                 onChange={handleChange}
                 placeholder="Name"
                 required
-                className="w-full p-2 text-sm bg-[#333] text-white rounded border border-gray-600 focus:border-orange-500 focus:outline-none"
+                className="w-full p-2 text-sm bg-white text-gray-800 rounded border border-gray-300 focus:border-teal-500 focus:outline-none" /* White background, teal focus */
               />
               <input
                 type="email"
@@ -124,12 +139,10 @@ const ContactModal = ({ isOpen, onClose, tyreModel }) => {
                 onChange={handleChange}
                 placeholder="Email"
                 required
-                className="w-full p-2 text-sm bg-[#333] text-white rounded border border-gray-600 focus:border-orange-500 focus:outline-none"
+                className="w-full p-2 text-sm bg-white text-gray-800 rounded border border-gray-300 focus:border-teal-500 focus:outline-none" /* White background, teal focus */
               />
             </div>
             <div className="grid grid-cols-2 gap-3">
-              {" "}
-              {/* Phone and Company in one row */}
               <input
                 type="tel"
                 name="phone"
@@ -137,7 +150,7 @@ const ContactModal = ({ isOpen, onClose, tyreModel }) => {
                 onChange={handleChange}
                 placeholder="Phone"
                 required
-                className="w-full p-2 text-sm bg-[#333] text-white rounded border border-gray-600 focus:border-orange-500 focus:outline-none"
+                className="w-full p-2 text-sm bg-white text-gray-800 rounded border border-gray-300 focus:border-teal-500 focus:outline-none" /* White background, teal focus */
               />
               <input
                 type="text"
@@ -145,7 +158,7 @@ const ContactModal = ({ isOpen, onClose, tyreModel }) => {
                 value={formData.company}
                 onChange={handleChange}
                 placeholder="Company (optional)"
-                className="w-full p-2 text-sm bg-[#333] text-white rounded border border-gray-600 focus:border-orange-500 focus:outline-none"
+                className="w-full p-2 text-sm bg-white text-gray-800 rounded border border-gray-300 focus:border-teal-500 focus:outline-none" /* White background, teal focus */
               />
             </div>
             <input
@@ -155,20 +168,25 @@ const ContactModal = ({ isOpen, onClose, tyreModel }) => {
               onChange={handleChange}
               placeholder="Address"
               required
-              className="w-full p-2 text-sm bg-[#333] text-white rounded border border-gray-600 focus:border-orange-500 focus:outline-none"
+              className="w-full p-2 text-sm bg-white text-gray-800 rounded border border-gray-300 focus:border-teal-500 focus:outline-none" /* White background, teal focus */
             />
             <div className="flex items-center justify-between">
-              <label htmlFor="quantity" className="text-sm text-gray-300">
-                Quantity (min 50):
+              <label
+                htmlFor="quantity"
+                className="text-sm text-teal-700 font-medium"
+              >
+                {" "}
+                {/* Teal color */}
+                Quantity (min {minQuantity} {unit}):
               </label>
               <input
                 type="number"
                 name="quantity"
                 id="quantity"
-                min="50"
+                min={minQuantity}
                 value={formData.quantity}
                 onChange={handleQuantityChange}
-                className="w-20 p-2 text-sm bg-[#333] text-white rounded border border-gray-600 focus:border-orange-500 focus:outline-none"
+                className="w-20 p-2 text-sm bg-white text-gray-800 rounded border border-gray-300 focus:border-teal-500 focus:outline-none" /* White background, teal focus */
               />
             </div>
             <textarea
@@ -176,23 +194,21 @@ const ContactModal = ({ isOpen, onClose, tyreModel }) => {
               value={formData.message}
               onChange={handleChange}
               placeholder="Message"
-              rows="3" /* Reduced rows */
-              className="w-full p-2 text-sm bg-[#333] text-white rounded border border-gray-600 focus:border-orange-500 focus:outline-none"
+              rows="3"
+              className="w-full p-2 text-sm bg-white text-gray-800 rounded border border-gray-300 focus:border-teal-500 focus:outline-none" /* White background, teal focus */
             ></textarea>
             <div className="flex justify-end space-x-2 pt-2">
-              {" "}
-              {/* Tighter button spacing */}
               <button
                 type="button"
                 onClick={onClose}
-                className="px-3 py-1.5 text-sm text-gray-300 bg-[#333] rounded-md hover:bg-[#444]"
+                className="px-3 py-1.5 text-sm text-gray-600 bg-gray-200 rounded-md hover:bg-gray-300 transition-colors" /* Gray buttons */
               >
                 Cancel
               </button>
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="px-3 py-1.5 text-sm text-white bg-orange-600 rounded-md hover:bg-orange-700 disabled:bg-gray-600"
+                className="px-3 py-1.5 text-sm text-white bg-teal-600 rounded-md hover:bg-teal-700 disabled:bg-gray-400 transition-colors" /* Teal buttons */
               >
                 {status === "sending" ? "Sending..." : "Send"}
               </button>

@@ -11,6 +11,7 @@ import {
   Mail,
   MapPin,
 } from "lucide-react";
+import { Link } from "react-router";
 
 // ✅ Replacing shadcn/ui with Tailwind components
 const Button = ({
@@ -232,8 +233,9 @@ export default function ShippingAndDelivery() {
             assessment, ETA, and documentation checklist.
           </p>
           <div className="flex gap-3">
-            <Button>Request Proforma Invoice</Button>
-            <Button variant="secondary">Download Checklist</Button>
+            <Link to="/contact">
+              <Button variant="secondary">Contact Us</Button>
+            </Link>
           </div>
         </Card>
       </section>

@@ -14,10 +14,10 @@ import {
 
 const Footer = () => {
   const infoLinks = [
-    { label: "About Us", to: "/about-us" },
+    { label: "Contact", to: "/contact" },
+    { label: "About Us", to: "/aboutUs" },
     { label: "Shipping & Delivery", to: "/shipping" },
-    { label: "Privacy Policy", to: "/privacy-policy" },
-    { label: "Return Policy", to: "/return-policy" },
+    { label: "Privacy Policy", to: "/privacy" },
     { label: "Terms of Service", to: "/terms-of-service" },
   ];
 

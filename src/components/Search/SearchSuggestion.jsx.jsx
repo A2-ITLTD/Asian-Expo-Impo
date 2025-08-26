@@ -31,7 +31,7 @@ const SearchSuggestion = ({
               <div>
                 <p className="font-medium text-teal-800">{suggestion.name}</p>
                 <p className="text-sm text-gray-600">
-                  {suggestion.keyAttributes?.["Brand Name"]} •{" "}
+                  {suggestion.keyAttributes?.["Brand"]} •{" "}
                   {suggestion.keyAttributes?.Size}
                 </p>
                 <p className="text-xs text-gray-500">

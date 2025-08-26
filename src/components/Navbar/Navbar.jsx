@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import logo2 from "/assets/website_big_logo.png";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -34,27 +35,67 @@ const Navbar = () => {
     {
       name: "Dry Food",
       items: ["Rice", "Sugar", "Nuts"],
-      subItems: ["Cashew Nuts", "Almond Nuts"],
-    },
-    {
-      name: "Agriculture",
-      items: ["Fresh Potatoes", "Fresh Onion", "Organic Tea"],
-    },
-    {
-      name: "Frozen Fish",
-      items: [
-        "Eel",
-        "Crab",
-        "Shrimps",
-        "Frozen Tilapia",
-        "Pacific Mackerel Fish",
-      ],
     },
     {
       name: "Wood",
       items: ["Wood Pellets"],
     },
+    {
+      name: "Agriculture",
+      items: ["Fresh Potatoes", "Fresh Onion", "Organic Tea"],
+    },
   ];
+
+  // Mapping for navbar items to filter parameters
+  const productCategoryMapping = {
+    // Vehicle Parts & Accessories
+    "Truck Tires": "Truck Tires",
+    "Golf Cart": "Golf Cart",
+    Rim: "Rim",
+    "Electric Bike": "Electric Bike",
+    "Other Parts": "Other Parts",
+
+    // Metals & Metal Products
+    "Copper Scrap": "Copper Scrap",
+    "Cathode Copper": "Cathode Copper",
+    "Aluminum Metal": "Aluminum Metal",
+
+    // Dry Food
+    Rice: "Rice",
+    Sugar: "Sugar",
+    Nuts: "Nuts",
+    "Cashew Nuts": "Cashew Nuts",
+    "Almond Nuts": "Almond Nuts",
+
+    // Wood
+    "Wood Pellets": "Wood Pellets",
+
+    // Agriculture
+    "Fresh Potatoes": "Fresh Potatoes",
+    "Fresh Onion": "Fresh Onion",
+    "Organic Tea": "Organic Tea",
+  };
+
+  const handleProductClick = (productName) => {
+    const mappedCategory = productCategoryMapping[productName];
+    if (mappedCategory) {
+      navigate(
+        `/products?filter=${encodeURIComponent(mappedCategory)}&scroll=true`
+      );
+    } else {
+      navigate(
+        `/products?search=${encodeURIComponent(productName)}&scroll=true`
+      );
+    }
+    setIsProductsOpen(false);
+    setIsMenuOpen(false);
+  };
+
+  const handleViewAllProducts = () => {
+    navigate("/products?scroll=true");
+    setIsProductsOpen(false);
+    setIsMenuOpen(false);
+  };
 
   return (
     <nav className="bg-gradient-to-r from-teal-800 to-teal-600 shadow-lg px-4 py-3 sticky top-0 z-50">
@@ -98,13 +139,13 @@ const Navbar = () => {
                     </h3>
                     <div className="space-y-0.5">
                       {productCategories[0].items.map((item, itemIndex) => (
-                        <a
+                        <button
                           key={itemIndex}
-                          href="#"
-                          className="block py-1 px-2 hover:bg-teal-50 rounded text-xs text-gray-700 transition-colors"
+                          onClick={() => handleProductClick(item)}
+                          className="block w-full text-left py-1 px-2 hover:bg-teal-50 rounded text-xs text-gray-700 transition-colors"
                         >
                           {item}
-                        </a>
+                        </button>
                       ))}
                     </div>
                   </div>
@@ -116,13 +157,13 @@ const Navbar = () => {
                     </h3>
                     <div className="space-y-0.5">
                       {productCategories[1].items.map((item, itemIndex) => (
-                        <a
+                        <button
                           key={itemIndex}
-                          href="#"
-                          className="block py-1 px-2 hover:bg-teal-50 rounded text-xs text-gray-700 transition-colors"
+                          onClick={() => handleProductClick(item)}
+                          className="block w-full text-left py-1 px-2 hover:bg-teal-50 rounded text-xs text-gray-700 transition-colors"
                         >
                           {item}
-                        </a>
+                        </button>
                       ))}
                     </div>
                   </div>
@@ -134,13 +175,48 @@ const Navbar = () => {
                     </h3>
                     <div className="space-y-0.5">
                       {productCategories[2].items.map((item, itemIndex) => (
-                        <a
+                        <button
                           key={itemIndex}
-                          href="#"
-                          className="block py-1 px-2 hover:bg-amber-50 rounded text-xs text-gray-700 transition-colors"
+                          onClick={() => handleProductClick(item)}
+                          className="block w-full text-left py-1 px-2 hover:bg-amber-50 rounded text-xs text-gray-700 transition-colors"
                         >
                           {item}
-                        </a>
+                        </button>
+                      ))}
+                    </div>
+                    {productCategories[2].subItems && (
+                      <div className="mt-1 pl-2 border-l border-amber-200">
+                        <div className="space-y-0.5">
+                          {productCategories[2].subItems.map(
+                            (subItem, subIndex) => (
+                              <button
+                                key={subIndex}
+                                onClick={() => handleProductClick(subItem)}
+                                className="block w-full text-left py-0.5 px-2 hover:bg-amber-50 rounded text-xs text-gray-600 transition-colors"
+                              >
+                                {subItem}
+                              </button>
+                            )
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Wood */}
+                  <div className="flex-1">
+                    <h3 className="text-sm font-bold text-teal-800 pb-1 mb-2 border-b border-teal-200">
+                      Wood
+                    </h3>
+                    <div className="space-y-0.5">
+                      {productCategories[3].items.map((item, itemIndex) => (
+                        <button
+                          key={itemIndex}
+                          onClick={() => handleProductClick(item)}
+                          className="block w-full text-left py-1 px-2 hover:bg-amber-50 rounded text-xs text-gray-700 transition-colors"
+                        >
+                          {item}
+                        </button>
                       ))}
                     </div>
                   </div>
@@ -151,50 +227,14 @@ const Navbar = () => {
                       Agriculture
                     </h3>
                     <div className="space-y-0.5">
-                      {productCategories[3].items.map((item, itemIndex) => (
-                        <a
-                          key={itemIndex}
-                          href="#"
-                          className="block py-1 px-2 hover:bg-teal-50 rounded text-xs text-gray-700 transition-colors"
-                        >
-                          {item}
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Frozen Fish  */}
-                  <div className="flex-1">
-                    <h3 className="text-sm font-bold text-teal-800 pb-1 mb-2 border-b border-teal-200">
-                      Frozen Fish
-                    </h3>
-                    <div className="space-y-0.5">
                       {productCategories[4].items.map((item, itemIndex) => (
-                        <a
+                        <button
                           key={itemIndex}
-                          href="#"
-                          className="block py-1 px-2 hover:bg-teal-50 rounded text-xs text-gray-700 transition-colors"
+                          onClick={() => handleProductClick(item)}
+                          className="block w-full text-left py-1 px-2 hover:bg-teal-50 rounded text-xs text-gray-700 transition-colors"
                         >
                           {item}
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Wood */}
-                  <div className="flex-1">
-                    <h3 className="text-sm font-bold text-teal-800 pb-1 mb-2 border-b border-teal-200">
-                      Wood
-                    </h3>
-                    <div className="space-y-0.5">
-                      {productCategories[5].items.map((item, itemIndex) => (
-                        <a
-                          key={itemIndex}
-                          href="#"
-                          className="block py-1 px-2 hover:bg-amber-50 rounded text-xs text-gray-700 transition-colors"
-                        >
-                          {item}
-                        </a>
+                        </button>
                       ))}
                     </div>
                   </div>
@@ -202,12 +242,12 @@ const Navbar = () => {
 
                 {/* View All Products Button */}
                 <div className="mt-4 pt-3 border-t border-teal-200">
-                  <a
-                    href="#"
-                    className="block py-1.5 px-3 bg-gradient-to-r from-teal-600 to-teal-700 text-white font-medium rounded text-xs text-center hover:from-teal-700 hover:to-teal-800 transition-all"
+                  <button
+                    onClick={handleViewAllProducts}
+                    className="block w-full py-1.5 px-3 bg-gradient-to-r from-teal-600 to-teal-700 text-white font-medium rounded text-xs text-center hover:from-teal-700 hover:to-teal-800 transition-all"
                   >
                     View All Products
-                  </a>
+                  </button>
                 </div>
               </div>
             )}
@@ -262,17 +302,18 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="lg:hidden mt-4 py-4 border-t border-teal-700 bg-teal-800 rounded-lg">
           <div className="flex flex-col space-y-1 px-4">
-            <a
-              href="#"
+            <Link
+              to="/"
               className="text-white font-medium py-3 px-4 hover:bg-teal-700 rounded-md transition-colors"
+              onClick={() => setIsMenuOpen(false)}
             >
               Home
-            </a>
+            </Link>
 
             <div className="">
               <button
                 onClick={toggleProducts}
-                className="text-white font-medium flex items-center justify-between "
+                className="text-white font-medium flex items-center justify-between w-full py-3 px-4"
               >
                 Products
                 <FaChevronDown
@@ -291,25 +332,25 @@ const Navbar = () => {
                       </p>
                       <div>
                         {category.items.map((item, itemIndex) => (
-                          <a
+                          <button
                             key={itemIndex}
-                            href="#"
-                            className="block text-white py-0 px-1 hover:bg-teal-600 text-xs"
+                            onClick={() => handleProductClick(item)}
+                            className="block w-full text-left text-white py-0 px-1 hover:bg-teal-600 text-xs"
                           >
                             {item}
-                          </a>
+                          </button>
                         ))}
                       </div>
                       {category.subItems && (
                         <div className="pl-1">
                           {category.subItems.map((subItem, subIndex) => (
-                            <a
+                            <button
                               key={subIndex}
-                              href="#"
-                              className="block text-teal-200 py-0 px-1 hover:bg-teal-600 text-xs"
+                              onClick={() => handleProductClick(subItem)}
+                              className="block w-full text-left text-teal-200 py-0 px-1 hover:bg-teal-600 text-xs"
                             >
                               {subItem}
-                            </a>
+                            </button>
                           ))}
                         </div>
                       )}
@@ -322,24 +363,28 @@ const Navbar = () => {
             <Link
               to="/aboutUs"
               className="text-white font-medium py-3 px-4 hover:bg-teal-700 rounded-md transition-colors"
+              onClick={() => setIsMenuOpen(false)}
             >
               About Us
             </Link>
             <Link
               to="/shipping"
               className="text-white font-medium py-3 px-4 hover:bg-teal-700 rounded-md transition-colors"
+              onClick={() => setIsMenuOpen(false)}
             >
               Shipping & Delivery
             </Link>
             <Link
               to="/privacy"
               className="text-white font-medium py-3 px-4 hover:bg-teal-700 rounded-md transition-colors"
+              onClick={() => setIsMenuOpen(false)}
             >
               Privacy Policy
             </Link>
             <Link
               to="/contact"
               className="text-white font-medium py-3 px-4 hover:bg-teal-700 rounded-md transition-colors"
+              onClick={() => setIsMenuOpen(false)}
             >
               Contact
             </Link>

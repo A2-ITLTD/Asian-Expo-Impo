@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import ProductCategory from "./ProductCategory";
 import ProductSubcategory from "./ProductSubcategory";
 import ProductList from "./ProductList";
@@ -17,8 +17,10 @@ const ProductCatalog = () => {
   const [searchSuggestions, setSearchSuggestions] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [allProducts, setAllProducts] = useState([]);
+  const [shouldAutoScroll, setShouldAutoScroll] = useState(false);
 
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const fetchCategories = async () => {
@@ -45,13 +47,62 @@ const ProductCatalog = () => {
         );
         setAllProducts(products);
 
-        if (data.length > 0) {
-          const defaultCategory = data[0];
-          const defaultSubcategory =
-            defaultCategory?.subcategories?.[0] || null;
+        // Handle URL parameters for filtering
+        const searchParams = new URLSearchParams(location.search);
+        const filterParam = searchParams.get("filter");
+        const searchParam = searchParams.get("search");
 
-          setSelectedCategory(defaultCategory);
-          setSelectedSubcategory(defaultSubcategory);
+        // Check if we should auto-scroll (only when coming from product navigation)
+        const shouldScroll = searchParams.get("scroll") === "true";
+        setShouldAutoScroll(shouldScroll);
+
+        if (filterParam && data.length > 0) {
+          // Find category or subcategory that matches the filter
+          let foundCategory = null;
+          let foundSubcategory = null;
+
+          for (const category of data) {
+            // Check if category name matches
+            if (
+              category.name.toLowerCase().includes(filterParam.toLowerCase())
+            ) {
+              foundCategory = category;
+              foundSubcategory = category.subcategories?.[0] || null;
+              break;
+            }
+
+            // Check if any subcategory matches
+            const matchingSubcategory = category.subcategories?.find((sub) =>
+              sub.name.toLowerCase().includes(filterParam.toLowerCase())
+            );
+
+            if (matchingSubcategory) {
+              foundCategory = category;
+              foundSubcategory = matchingSubcategory;
+              break;
+            }
+          }
+
+          if (foundCategory) {
+            setSelectedCategory(foundCategory);
+            setSelectedSubcategory(foundSubcategory);
+          } else {
+            // Default to first category if no match
+            setSelectedCategory(data[0]);
+            setSelectedSubcategory(data[0]?.subcategories?.[0] || null);
+          }
+        } else if (searchParam) {
+          // Handle search queries
+          setSearchQuery(searchParam);
+          // Your existing search logic will handle the filtering
+          setSelectedCategory(data[0] || null);
+          setSelectedSubcategory(null);
+        } else {
+          // Default behavior
+          if (data.length > 0) {
+            setSelectedCategory(data[0]);
+            setSelectedSubcategory(data[0]?.subcategories?.[0] || null);
+          }
         }
       } catch (err) {
         console.error("Error fetching categories:", err);
@@ -62,7 +113,27 @@ const ProductCatalog = () => {
     };
 
     fetchCategories();
-  }, []);
+  }, [location.search]);
+
+  // Auto-scroll to products only when shouldAutoScroll is true
+  useEffect(() => {
+    if (!loading && selectedCategory && shouldAutoScroll) {
+      // Small delay to ensure DOM is fully rendered
+      const timer = setTimeout(() => {
+        const productsSection = document.querySelector(".lg\\:flex-row");
+        if (productsSection) {
+          productsSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+        // Reset the flag after scrolling
+        setShouldAutoScroll(false);
+      }, 300);
+
+      return () => clearTimeout(timer);
+    }
+  }, [loading, selectedCategory, shouldAutoScroll]);
 
   // Update search suggestions when query changes
   useEffect(() => {
@@ -72,7 +143,7 @@ const ProductCatalog = () => {
         .filter((product) => {
           const productText = `
           ${product.name} 
-          ${product.keyAttributes?.["Brand Name"] || ""} 
+          ${product.keyAttributes?.["Brand"] || ""} 
           ${product.keyAttributes?.Size || ""}
         `.toLowerCase();
 
@@ -98,6 +169,11 @@ const ProductCatalog = () => {
     } else {
       setSelectedSubcategory(null);
     }
+
+    // Update URL to reflect selected category and enable scrolling
+    navigate(
+      `/products?filter=${encodeURIComponent(category.name)}&scroll=true`
+    );
   };
 
   const handleSubcategorySelect = (subcategory) => {
@@ -152,7 +228,7 @@ const ProductCatalog = () => {
     const brands = [
       ...new Set(
         selectedSubcategory.products
-          .map((product) => product.keyAttributes?.["Brand Name"])
+          .map((product) => product.keyAttributes?.["Brand"])
           .filter((brand) => brand)
       ),
     ];
@@ -243,7 +319,6 @@ const ProductCatalog = () => {
           </form>
         </div>
 
-        {/* Rest of your ProductCatalog component remains the same */}
         <h1 className="text-3xl font-bold text-teal-800 mb-4 text-center">
           Product Catalog
         </h1>

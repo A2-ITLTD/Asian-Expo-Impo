@@ -7,6 +7,7 @@ import {
   Star,
   ArrowRight,
 } from "lucide-react";
+import { Link } from "react-router";
 
 const WhyChooseUs = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -197,15 +198,17 @@ const WhyChooseUs = () => {
               Join hundreds of satisfied clients who trust us for their import
               and export needs
             </p>
-            <button className="group bg-gradient-to-r from-orange-400 to-orange-500 hover:from-orange-300 hover:to-orange-400 text-white px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl">
-              <span className="flex items-center justify-center">
-                Get Started Today
-                <ArrowRight
-                  size={20}
-                  className="ml-2 group-hover:translate-x-1 transition-transform duration-300"
-                />
-              </span>
-            </button>
+            <Link to="/contact" className="inline-block">
+              <button className="group bg-gradient-to-r from-orange-400 to-orange-500 hover:from-orange-300 hover:to-orange-400 text-white px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl">
+                <span className="flex items-center justify-center">
+                  Get Started Today
+                  <ArrowRight
+                    size={20}
+                    className="ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                  />
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

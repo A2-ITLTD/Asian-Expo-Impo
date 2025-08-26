@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import WebsiteLogo from "../components/shared/WebsiteLogo";
+import { useNavigate } from "react-router";
+import { FaArrowLeft } from "react-icons/fa";
 
 const ContactPage = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -18,27 +21,60 @@ const ContactPage = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus(null);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setSubmitStatus("success");
-      setFormData({
-        name: "",
-        company: "",
-        email: "",
-        phone: "",
-        message: "",
+    try {
+      const response = await fetch("http://localhost:3001/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...formData,
+          type: "general_inquiry",
+          subject: "General Inquiry from Contact Page",
+        }),
       });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormData({
+          name: "",
+          company: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        setSubmitStatus("error");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      setSubmitStatus("error");
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
+  };
+
+  const handleGoBack = () => {
+    if (window.history.state && window.history.state.idx > 0) {
+      navigate(-1);
+    } else {
+      navigate("/");
+    }
   };
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="px-4 max-w-7xl mx-auto">
+        <button
+          onClick={handleGoBack}
+          className="flex items-center text-teal-700 hover:text-teal-800 mb-6 transition-colors duration-200"
+        >
+          <FaArrowLeft className="mr-2" />
+          Back        
+        </button>
         {/* Header Section */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-6">
@@ -199,7 +235,7 @@ const ContactPage = () => {
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label className="block text-gray-700 mb-2 font-medium">
                     Your Name *
@@ -210,7 +246,7 @@ const ContactPage = () => {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-500"
                   />
                 </div>
 
@@ -223,7 +259,7 @@ const ContactPage = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-500"
                   />
                 </div>
 
@@ -237,7 +273,7 @@ const ContactPage = () => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-500"
                   />
                 </div>
 
@@ -250,7 +286,7 @@ const ContactPage = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-500"
                   />
                 </div>
 
@@ -263,7 +299,7 @@ const ContactPage = () => {
                     required
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent h-40"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent h-40 text-gray-500"
                   ></textarea>
                 </div>
 

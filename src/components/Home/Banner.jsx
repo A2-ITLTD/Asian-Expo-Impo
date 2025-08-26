@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router";
 
 const Banner = () => {
   const [displayText, setDisplayText] = useState("");
@@ -92,7 +93,10 @@ const Banner = () => {
 
             {/* Call to Action Buttons */}
             <div className=" flex flex-wrap justify-center gap-5">
-              <button className="relative overflow-hidden group bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800 text-white font-semibold py-3 px-8 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+              <Link
+                to="/products"
+                className="relative overflow-hidden group bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800 text-white font-semibold py-3 px-8 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+              >
                 <span className="relative z-10 flex items-center">
                   <svg
                     className="w-5 h-5 mr-2"
@@ -111,9 +115,12 @@ const Banner = () => {
                   Explore Products
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-teal-700 to-teal-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </button>
+              </Link>
 
-              <button className="relative overflow-hidden group bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-3 px-8 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+              <Link
+                to="/contact"
+                className="relative overflow-hidden group bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-3 px-8 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+              >
                 <span className="relative z-10 flex items-center">
                   <svg
                     className="w-5 h-5 mr-2"
@@ -132,7 +139,7 @@ const Banner = () => {
                   Contact Us
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
